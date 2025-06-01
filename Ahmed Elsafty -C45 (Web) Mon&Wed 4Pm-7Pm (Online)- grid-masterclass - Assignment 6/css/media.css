@@ -1,0 +1,22 @@
+@media screen and (min-width: 640px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "block1 block1 block2 block2"
+      "block3 block4 block4 block5"
+      "block6 block7 block7 block5"
+      "block8 block9 block10 block10";
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1536px) {
+}
