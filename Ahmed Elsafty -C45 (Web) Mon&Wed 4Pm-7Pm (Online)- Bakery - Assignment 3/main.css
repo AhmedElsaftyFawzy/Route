@@ -1,0 +1,155 @@
+.clr {
+  clear: both;
+}
+body {
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.navbar .image {
+  width: 49%;
+  display: inline-block;
+}
+.navbar div img {
+  height: 48px;
+}
+.navbar .links {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.navbar .links li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 25px;
+}
+.home {
+  background-image: url(assets/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero {
+  margin-top: 300px;
+  text-align: center;
+  color: white;
+}
+.hero button {
+  padding: 15px 28px;
+}
+.contact {
+  background-color: transparent;
+  color: white;
+}
+.learn {
+  background-color: tan;
+  color: white;
+}
+
+.about {
+  margin-top: 100px;
+}
+.about div {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  vertical-align: middle;
+}
+.about div img {
+  width: 75%;
+  padding-left: 100px;
+}
+.about div p img {
+  width: 25px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.location {
+  background-color: #f8f8f8;
+}
+.location div {
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  vertical-align: middle;
+}
+.location > div {
+  margin-left: 100px;
+}
+.location div img {
+  width: 75%;
+}
+
+.product {
+  margin-top: 100px;
+  text-align: center;
+}
+.product p {
+  color: #888;
+}
+.card {
+  width: 25%;
+  float: left;
+  padding: 50px;
+}
+.card img {
+  width: 100%;
+}
+.contact-information {
+  margin-top: 100px;
+  background-color: #f8f8f8;
+}
+.contact-information .float {
+  width: 45%;
+  float: left;
+}
+.contact-information .information {
+  padding: 40px;
+}
+.contact-information p {
+  width: 50%;
+  color: #888;
+}
+.contact-information p img {
+  width: 25px;
+}
+.prefooter {
+  padding-top: 100px;
+  padding-left: 100px;
+  background-color: #403d38;
+}
+.contact-details {
+  background-image: url(assets/contact-details-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.prefooter .float2 {
+  width: 20%;
+  padding: 10px;
+  float: left;
+}
+.prefooter h4 {
+  color: white;
+}
+.prefooter p {
+  color: grey;
+}
+.prefooter div p img {
+  width: 25px;
+}
+.footer {
+  padding: 100px;
+  background-color: #353330;
+  text-align: center;
+}
+.footer a img {
+  width: 50px;
+}

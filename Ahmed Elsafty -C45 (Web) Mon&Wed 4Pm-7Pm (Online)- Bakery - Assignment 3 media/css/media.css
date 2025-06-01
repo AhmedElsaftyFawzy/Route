@@ -1,0 +1,42 @@
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+  .home-content h2 {
+    font-size: 30px;
+  }
+  .home-content h1 {
+    font-size: 50px;
+  }
+  .about .about-image,
+  .about .about-content {
+    width: 49%;
+  }
+  .location .location-content,
+  .location .location-image {
+    width: 49%;
+  }
+  .card {
+    width: 33%;
+  }
+  .content .content-information,
+  .content .content-map {
+    width: 49%;
+  }
+  .prefooter .item {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar .navbar-links {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+  .prefooter .item {
+    width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
