@@ -1,0 +1,130 @@
+@media screen and (min-width: 640px) {
+}
+@media screen and (min-width: 768px) {
+  /*home  */
+  .navbar .links ul {
+    display: flex;
+    gap: 15px;
+  }
+  /* chefs */
+  .chefs .chef-cards .card {
+    width: 49%;
+  }
+  /* gallery */
+  .gallery .gallery-photos {
+    height: 1000px;
+  }
+  .gallery .gallery-photos .photo {
+    width: 36%;
+  }
+  .gallery .pizza {
+    order: 1;
+  }
+  .gallery .pizza-slices {
+    order: 3;
+  }
+  .gallery .steak {
+    order: 5;
+  }
+  .gallery .omelette {
+    order: 4;
+  }
+  .gallery .burger {
+    order: 2;
+  }
+  .gallery .fried {
+    order: 6;
+  }
+  .gallery .kofta {
+    order: 7;
+  }
+  /* contact */
+  .contact .details .item {
+    width: 49%;
+  }
+  form .input-group {
+    gap: 0px;
+  }
+  form .input-group input {
+    width: 49%;
+  }
+  /* footer */
+  footer .about {
+    width: 49%;
+    order: 0;
+  }
+  footer .subscription {
+    width: 100%;
+    order: 2;
+  }
+  footer .contact-details {
+    width: 49%;
+    order: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* home */
+  .home-content .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+  }
+  .content-txt {
+    width: 40%;
+    text-align: left;
+  }
+  .content-image {
+    width: 40%;
+  }
+  .content-txt .first {
+    border-radius: 0px 25px 25px;
+  }
+  /* chefs */
+  .chefs .chef-cards .card {
+    width: 32%;
+  }
+  /* gallery */
+  .gallery .gallery-photos {
+    height: 1100px;
+  }
+  .gallery .pizza {
+    order: 1;
+  }
+  .gallery .pizza-slices {
+    order: 2;
+  }
+  .gallery .steak {
+    order: 3;
+  }
+  .gallery .omelette {
+    order: 4;
+  }
+  .gallery .burger {
+    order: 5;
+  }
+  .gallery .fried {
+    order: 6;
+  }
+  .gallery .kofta {
+    order: 7;
+  }
+  /* footer */
+  footer .about {
+    width: 24%;
+  }
+  footer .subscription {
+    width: 48%;
+  }
+  footer .contact-details {
+    width: 24%;
+    order: 2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery .gallery-photos {
+    height: 1250px;
+  }
+}
+@media screen and (min-width: 1536px) {
+}
