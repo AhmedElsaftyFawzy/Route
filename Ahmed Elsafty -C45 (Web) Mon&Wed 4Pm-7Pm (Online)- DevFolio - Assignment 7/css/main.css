@@ -1,0 +1,202 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+::selection {
+  background-color: #0078ff;
+  color: white;
+}
+/* navbar */
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.links {
+  background-color: white;
+}
+.navbar-nav .nav-link {
+  color: black;
+}
+.dropdown-item:hover,
+.navbar-nav .nav-link.active,
+.nav-link:hover,
+.nav-item .nav-link:focus {
+  color: #0c7eff;
+}
+.navbar-nav .nav-link.show {
+  color: black;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+}
+.navbar-nav .nav-link::before {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  transition: width 1s;
+}
+.navbar-nav .nav-link:hover::before {
+  width: 60%;
+}
+.dropdown-menu {
+  background-color: white;
+}
+.deep:hover {
+  color: #0c7eff;
+}
+
+/* home */
+.home {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/hero-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+/* about */
+.progress {
+  background-color: #cde1f8;
+}
+.progress-bar {
+  background-color: #0078ff;
+}
+.html {
+  width: 85%;
+}
+.js {
+  width: 90%;
+}
+.about-me::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0078ff;
+}
+
+/* services */
+.services-first::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0078ff;
+}
+.services .container .row i {
+  background-color: white;
+  --bs-border-color: #0078ff;
+}
+.services .container .row i:hover {
+  color: white;
+  background-color: #0078ff;
+  --bs-border-color: #cde1f8;
+}
+/* counter */
+.counter {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../assets/counters-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+/* portfolio */
+.portfolio .portfolio-first::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0078ff;
+}
+.portfolio .card img {
+  transition: all 1s;
+}
+.portfolio .card img:hover {
+  transform: scale(1.5);
+}
+/* testimones */
+.testimones {
+  background-image: linear-gradient(rgba(0, 120, 255, 0.7)),
+    url(../assets/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+.testimones img {
+  width: 10%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+}
+/* blog */
+.blog .blog-first::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0078ff;
+}
+.blog a {
+  color: black;
+}
+.blog a:hover {
+  color: #0078ff;
+}
+.blog a h6 {
+  bottom: -1rem;
+  font-size: 0.75rem;
+}
+/* contact */
+.contact {
+  background-image: linear-gradient(rgba(0, 120, 255, 0.7)),
+    url(../assets/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+.contact .container .row h5::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 3px;
+  bottom: -1rem;
+  left: 2.5rem;
+  transform: translateX(-50%);
+  background-color: #0078ff;
+}
+/* contact */
+.fa-brands {
+  color: #1e1e1e;
+  --bs-border-color: #0078ff;
+}
+.fa-brands:hover {
+  background-color: #0078ff;
+  color: white;
+  --bs-border-color: #cde1f8;
+}
+/* footer */
+footer {
+  background-color: #0062d3;
+}

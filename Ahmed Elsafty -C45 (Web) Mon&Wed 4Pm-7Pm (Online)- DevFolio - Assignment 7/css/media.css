@@ -1,0 +1,40 @@
+/* sm */
+@media (min-width: 640px) {
+}
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .links {
+    background-color: transparent;
+  }
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-link.active {
+    color: white;
+  }
+  .nav-link.dropdown-toggle:active,
+  .nav-link:hover,
+  .logo:hover,
+  .nav-item .nav-link:focus {
+    color: white;
+  }
+  .navbar-nav .nav-link.show {
+    color: white;
+  }
+  .home h1 {
+    font-size: 4.5rem;
+  }
+  .deep:hover {
+    color: #0c7eff;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+}
+/* 2xl */
+@media (min-width: 1536px) {
+}
