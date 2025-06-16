@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="m-auto my-5 position-relative">Bookmarker</h1>
+      <div class="bookmark-body">
+        <h2 class="text-center py-5">
+          <span
+            ><i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark r"></i
+          ></span>
+        </h2>
+        <form>
+          <div class="site-name">
+            <label for="siteName" class="ms-2 mb-2 fw-semibold"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label
+            >
+            <div class="position-relative">
+              <input
+                type="text"
+                placeholder="Bookmark Name"
+                class="form-control"
+                id="siteName"
+              />
+              <span
+                class="validation-icon position-absolute top-50 end-0 translate-middle-y pe-2 d-none"
+                id="siteNameIcon"
+              ></span>
+            </div>
+          </div>
+          <div class="site-url mt-3">
+            <label for="siteURL" class="ms-2 mb-2 fw-semibold">
+              <i class="fa-solid fa-link pe-2"></i>Site URL
+            </label>
+            <div class="position-relative">
+              <input
+                type="url"
+                placeholder="Website URL"
+                class="form-control"
+                id="siteURL"
+              />
+              <span
+                class="validation-icon position-absolute top-50 end-0 translate-middle-y pe-2 d-none"
+                id="siteURLIcon"
+              ></span>
+            </div>
+          </div>
+          <div class="position-relative">
+            <button
+              id="submit"
+              onclick="addSite()"
+              type="button"
+              class="btn btn-submit position-relative translate-middle-x start-50 my-3 px-5"
+            >
+              Submit
+            </button>
+            <button
+              id="edit"
+              onclick="editSite()"
+              type="button"
+              class="btn btn-warning position-relative translate-middle-x start-50 my-3 px-5 d-none"
+            >
+              Edit
+            </button>
+          </div>
+        </form>
+        <input
+          oninput="handleSearch()"
+          type="text"
+          placeholder="Search..........."
+          class="form-control my-5"
+          id="searchInput"
+        />
+      </div>
+      <table class="table mt-4 text-center bg-light">
+        <thead>
+          <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">visit</th>
+            <th class="text-capitalize">edit</th>
+            <th class="text-capitalize">delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent"></tbody>
+      </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

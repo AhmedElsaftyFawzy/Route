@@ -1,0 +1,99 @@
+body {
+  background-color: #f7ecde;
+  ::selection {
+    background-color: #fec260;
+    color: black;
+  }
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 3.125rem;
+  width: 16.875rem;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 10px;
+  right: 0;
+  background-color: rgb(254, 194, 96);
+  z-index: -1;
+  transition: all 350ms;
+}
+h1:hover::after {
+  height: 50%;
+}
+.bookmark-body {
+  border-top: black 1px dotted;
+  border-bottom: black 1px dotted;
+}
+h2 span {
+  font-family: "Righteous", cursive;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+label,
+.btn,
+th {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.form-control:focus {
+  border-color: rgb(254, 194, 96);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(254, 194, 96);
+}
+.btn-submit {
+  color: white;
+  background-color: #d1512d;
+}
+.btn-submit:hover {
+  color: white;
+  background-color: #a03315;
+}
+.btn-visit {
+  color: white;
+  background-color: #9eb23b;
+}
+.btn-visit:hover {
+  color: white;
+  background-color: #8a9e23;
+}
+.btn-edit {
+  color: white;
+  background-color: #8a9e23;
+}
+.btn-edit:hover {
+  color: white;
+  background-color: #9eb23b;
+}
+.btn-delete {
+  color: white;
+  background-color: #eb1d36;
+}
+.btn-delete:hover {
+  color: white;
+  background-color: #d30820;
+}
+.validation-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+input.form-control {
+  position: relative;
+}
+input.form-control.valid {
+  border: 2px solid #4caf50 !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #4caf50;
+}
+
+input.form-control.invalid {
+  border: 2px solid #f44336 !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f44336;
+}
