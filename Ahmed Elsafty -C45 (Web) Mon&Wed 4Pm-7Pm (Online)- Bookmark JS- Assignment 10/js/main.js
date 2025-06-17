@@ -154,8 +154,7 @@ function validateSiteName() {
 
 function validateSiteURL() {
   const value = siteURLInput.value.trim()
-  const pattern =
-    /^(https:\/\/)?(www\.)?[\w-]+(\.[\w-]+)*\.(com|org|net|edu|gov|info|site|biz|io|co|me|[a-z]{2,})(\/[\w\-\/]*)?$/i
+  const pattern = /^(https:\/\/)?(www\.)?[\w-]+(\.[\w-]+)*\.(com|org|net|edu|gov|info|site|biz|io|co|me|[a-z]{2,})(\/[\w\-\/]*)?$/i
   const isValid = pattern.test(value)
 
   if (isValid) {
