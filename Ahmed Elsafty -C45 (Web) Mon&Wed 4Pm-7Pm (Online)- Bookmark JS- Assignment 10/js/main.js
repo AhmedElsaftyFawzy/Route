@@ -12,6 +12,14 @@ if (localStorage.getItem("site") != null) {
 }
 
 function addSite() {
+  var isNameValid = validateSiteName()
+  var isUrlValid = validateSiteURL()
+
+  if (!isNameValid || !isUrlValid) {
+    callError()
+    return
+  }
+  
   var site = {
     name: siteNameInput.value,
     url: siteURLInput.value,
@@ -165,4 +173,46 @@ function validateSiteURL() {
     siteURLInput.classList.remove("valid", "invalid")
   }
   return isValid
+}
+
+// messsage
+function callError() {
+  Swal.fire({
+    html: `
+  <div style="position: relative;">
+      <!-- Three colored dots -->
+      <div style="position: absolute; top: -70px; left: 0px; display: flex; gap: 4px;">
+        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #ff5f56;"></div>
+        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #ffbd2e;"></div>
+        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #27c93f;"></div>
+      </div>
+    <div style="text-align: left; margin-top: 75px">
+      <p style="font-weight:500;  font-family: 'Bree Serif', serif; font-size: 20px"> Site Name or Url is not valid, Please follow the rules below : </p>
+      <ul style="padding-left: 20px; margin-top: 5px; list-style:none;">
+        <li style="margin-bottom: 8px">
+          <i class="fa-regular fa-circle-right" style="color: #ff0000;"></i>
+          Site name must contain at least 3 characters
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-right" style="color: #ff0000;"></i>
+          Site URL must be a valid one
+        </li>
+      </ul>
+    </div>
+  `,
+    showCloseButton: true,
+    showConfirmButton: false,
+    customClass: {
+      content: "sweet-alert-validation",
+    },
+    didOpen: () => {
+      // Target close button and remove border
+      const closeButton = document.querySelector(".swal2-close")
+      if (closeButton) {
+        closeButton.style.color = "black"
+        closeButton.style.border = "0"
+        closeButton.style.boxShadow = "none"
+      }
+    },
+  })
 }
