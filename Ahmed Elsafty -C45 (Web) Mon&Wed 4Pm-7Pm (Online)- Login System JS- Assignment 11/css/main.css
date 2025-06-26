@@ -1,0 +1,26 @@
+body {
+  background-color: #24353f;
+  height: 75vh;
+}
+.group {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+h1 {
+  color: #17a2b8;
+}
+input {
+  background-color: transparent !important;
+  color: white !important;
+}
+input::placeholder {
+  color: #b6b6b6 !important;
+}
+p a {
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+.success {
+  color: #27a745;
+}
