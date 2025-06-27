@@ -37,7 +37,7 @@ function signup() {
     }
     for (let i = 0; i < userlist.length; i++) {
       if (userlist[i].email == user.email) {
-        signupWarning.innerHTML = "This Email Is Already Exist"
+        signupWarning.innerHTML = "This Email Already Exist"
         return
       }
     }
