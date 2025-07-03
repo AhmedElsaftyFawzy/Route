@@ -146,7 +146,7 @@ async function getCity() {
 
 async function getWeather(city) {
   const key = "bfe6835c749b48c680f121021250307"
-  let api = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3`
+  let api = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3`
   const response = await fetch(api)
   const data = await response.json()
 
