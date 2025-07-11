@@ -10,7 +10,7 @@ export async function display(game) {
   temp += `<div
           class="col-xl-3 col-lg-4 col-md-6 col-12"
         >
-          <div class="card position-relative" data-game-id="${game.id}">
+          <div class="card" data-game-id="${game.id}">
               <img
                 src="${game.thumbnail}"
                 class="card-img-top w-100 p-2"
