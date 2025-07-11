@@ -7,12 +7,6 @@ export const header = document.querySelector("header")
 export const details = document.querySelector(".details")
 let active = document.querySelector(".active")
 const navLinks = document.querySelectorAll(".nav-link")
-const loader = document.querySelector(".loader")
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  loader.classList.add("d-none")
-})
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 180) {
