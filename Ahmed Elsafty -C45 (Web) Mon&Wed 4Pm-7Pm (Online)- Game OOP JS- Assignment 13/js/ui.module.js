@@ -20,7 +20,7 @@ export async function display(game) {
                 <h5 class="card-title d-flex justify-content-between">
                   ${game.title} <span class="badge text-bg-primary p-2">Free</span>
                 </h5>
-                <p class="card-text text-center">${game.short_description}</p>
+                <p class="card-text text-center">${game.description}</p>
               </div>
                 <div class="card-footer d-flex justify-content-between text-white">
                     <span>${game.genre}</span>
