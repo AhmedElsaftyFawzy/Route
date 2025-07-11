@@ -9,9 +9,9 @@ let active = document.querySelector(".active")
 const navLinks = document.querySelectorAll(".nav-link")
 const loader = document.querySelector(".loader")
 
-details.classList.remove("d-none")
+loader.classList.remove("d-none")
 document.addEventListener("DOMContentLoaded", () => {
-  details.classList.add("d-none")
+  loader.classList.add("d-none")
 })
 
 window.addEventListener("scroll", function () {
