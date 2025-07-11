@@ -9,7 +9,7 @@ let active = document.querySelector(".active")
 const navLinks = document.querySelectorAll(".nav-link")
 const loader = document.querySelector(".loader")
 
-loader.classList.remove("d-none")
+
 document.addEventListener("DOMContentLoaded", () => {
   loader.classList.add("d-none")
 })
