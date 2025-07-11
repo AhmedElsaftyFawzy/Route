@@ -1,3 +1,5 @@
+const loader = document.getElementById("loader")
+
 export default class GameApiService {
   constructor() {
     this.baseUrl = "https://free-to-play-games-database.p.rapidapi.com/api"
@@ -8,26 +10,26 @@ export default class GameApiService {
   }
 
   async getGames(category = "mmorpg") {
-    document.getElementById("loader").classList.remove("d-none")
+    loader.classList.remove("d-none")
     const url = `${this.baseUrl}/games?category=${category}`
     const response = await fetch(url, {
       method: "GET",
       headers: this.headers,
     })
     const data = await response.json()
-    document.getElementById("loader").classList.add("d-none")
+    loader.classList.add("d-none")
     return data
   }
 
   async getGameDetails(id) {
-    document.getElementById("loader").classList.remove("d-none")
+    loader.classList.remove("d-none")
     const url = `${this.baseUrl}/game?id=${id}`
     const response = await fetch(url, {
       method: "GET",
       headers: this.headers,
     })
     const data = await response.json()
-    document.getElementById("loader").classList.add("d-none")
+    loader.classList.add("d-none")
     return data
   }
 }
