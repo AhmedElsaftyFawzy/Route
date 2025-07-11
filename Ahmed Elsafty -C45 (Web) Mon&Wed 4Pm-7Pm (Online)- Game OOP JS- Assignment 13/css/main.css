@@ -68,6 +68,7 @@ body {
   border: 3px solid;
   border-color: #fff #fff transparent transparent;
   box-sizing: border-box;
+  -moz-animation: rotation 1s linear infinite;
   animation: rotation 1s linear infinite;
 }
 .loader::after,
@@ -86,6 +87,7 @@ body {
   height: 40px;
   border-radius: 50%;
   box-sizing: border-box;
+  -moz-animation: rotationBack 0.5s linear infinite;
   animation: rotationBack 0.5s linear infinite;
   transform-origin: center center;
 }
@@ -93,7 +95,26 @@ body {
   width: 32px;
   height: 32px;
   border-color: #fff #fff transparent transparent;
+  -moz-animation: rotation 1.5s linear infinite;
   animation: rotation 1.5s linear infinite;
+}
+
+@-moz-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes rotation {
